@@ -193,3 +193,50 @@ hello('Hello');
 (function Bonjour(msg) {
 	console.log(msg);
 })('Bonjour IIFE');
+
+console.log('\nGod damn quiz 💔!');
+// Fun quiz time💔
+// function calculate(command, a, b)
+// command: add, substract, divide, mulitiply, remainder
+
+function myCalc(command, a, b) {
+	switch (command) {
+		case 'add':
+			return a + b;
+		case 'substract':
+			return a - b;
+		case 'divide':
+			return a / b;
+		case 'multiply':
+			return a * b;
+		case 'remainder':
+			return a % b;
+		default:
+			console.log('Same all!');
+			break;
+	}
+}
+console.log(myCalc('add', 5, 10));
+console.log(myCalc('substract', 5, 10));
+console.log(myCalc('divide', 5, 10));
+console.log(myCalc('multiply', 5, 10));
+console.log(myCalc('remainder', 5, 10));
+console.log(myCalc('unknown', 5, 10));
+
+function calculate(command, a, b) {
+	switch (command) {
+		case 'add':
+			return a + b;
+		case 'substract':
+			return a - b;
+		case 'divide':
+			return a / b;
+		case 'multiply':
+			return a * b;
+		case 'remainder':
+			return a % b;
+		default:
+			throw Error('God damn! Unknown command error!');
+	}
+}
+console.log(calculate('test', 2, 2));
