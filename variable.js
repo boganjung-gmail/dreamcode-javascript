@@ -27,18 +27,22 @@ console.log('age: ' + age);
 var age;
 
 // 3. 상수, Constant > Read Only..!
-// 값을 선언한 이후 절대 바꿀 수 없다! 그래서 PHP 중요 설정 값을 const로 설정하나 보다.
-// Immutable > favor immutable date type always for a few reasons;
-// 	- 보안상의 이유(Security)
-//	- 쓰레드 안정성(thread safety)
-//	- 인간의 실수(reduce human mistakes)
+// 값을 선언한 이후 절대 바꿀 수 없다! 그래서 PHP 중요 설정 값을 const로 설정하는 건가?
 console.log('\n3. 상수(Constant)');
 const daysInWeek = 7;
 const maxNumber = 5;
 
+// Note!
+// Immutable data types: premitive types, frozen objects(i.e object.freeze())
+// Mutable data types: all object by default are mutable in JS 
+// favor immutable date type always for a few reasons;
+// 	- 보안상의 이유(Security)
+//	- 쓰레드 안정성(thread safety)
+//	- 인간의 실수(reduce human mistakes)
+
 // 4. Variable types
 // 4-1. primitive type : single item: number, string, boolean, null, undefine, symbol
-// 4-2. object : box container > 레퍼런스 저장
+// 4-2. object : box container > "Reference > Object > Value"로 접근
 // function, "first-class function"이란?
 // function을 변수에 할당, 함수의 파라미터(인자), 리턴타입으로도 전달 가능
 console.log('\n4. 변수 타입(Variable types)');
