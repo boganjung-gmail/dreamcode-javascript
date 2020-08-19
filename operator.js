@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('\n1. String concatenation');
+console.log('1. String concatenation');
 // 1. String concatenation
 console.log('my' + ' cat');
 console.log('1' + 2);
